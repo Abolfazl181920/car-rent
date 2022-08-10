@@ -1,3 +1,5 @@
 export const RightSide = () => {
-    return <h1>RightSide</h1>
+    return(
+        <h1>RightSide</h1>
+    )
 }
