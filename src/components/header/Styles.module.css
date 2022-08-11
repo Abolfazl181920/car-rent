@@ -1,0 +1,77 @@
+:root {
+    --gray: #e2d9d9;
+    --shadow: rgba(0, 0, 0, .20);
+}
+
+/* Header.jsx */
+.flexiable {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 85px;
+    width: 1366px;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow:
+    0 1.8px 3px rgba(0, 0, 0, 0.0016),
+    0 .2px 15px rgba(0, 0, 0, 0.042)
+}
+
+/* RightSide.jsx */
+.elrotate {
+    transform: rotate(-10deg);
+    width: 40px;
+    padding-right: 10px;
+}
+
+.rightposition {
+    padding: 50px;
+}
+
+/* LeftSide.jsx */
+.ellogo {
+    transform: rotate(-10deg);
+    padding-left: 50px;
+    width: 100px;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+}
+
+.bar {
+    margin-left: 300px;
+    width: 400px;
+    border-radius: 30px;
+    border: 1px solid var(--gray);
+}
+
+.searchbar {
+    height: 40px;
+    border: none;
+    width: 325px;
+    font-size: 16px;
+    outline: none;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.sicon {
+    height: 20px;
+    position: relative;
+    top: 5px;
+    left: 20px;
+    cursor: pointer;
+}
+
+::placeholder {
+    font-family: 'Lato', sans-serif;
+    padding-left: 15px;
+}
+
+.bar:hover {
+    box-shadow: 0 0 5px 0 var(--shadow);
+}
+                
+.bar:focus-within {
+    box-shadow: 0 0 5px 0 var(--shadow);
+    outline: none;
+}

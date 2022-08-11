@@ -1,9 +1,11 @@
 import { LeftSide } from './LeftSide'
 import { RightSide } from './RightSide'
 
+import styles from './Styles.module.css'
+
 export const Header = () => {
     return(
-        <header>
+        <header className={styles.flexiable}>
             <LeftSide />
             <RightSide />
         </header>
