@@ -10,10 +10,17 @@
     justify-content: space-between;
     height: 85px;
     width: 1366px;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: #fbf9f9;
     box-shadow:
     0 1.8px 3px rgba(0, 0, 0, 0.0016),
     0 .2px 15px rgba(0, 0, 0, 0.042)
+}
+
+@media only screen and (max-width: 412px) {
+    .flexiable {
+        height: 70px;
+        width: 411.2px;
+    }
 }
 
 /* RightSide.jsx */
@@ -27,6 +34,17 @@
     padding: 50px;
 }
 
+@media only screen and (max-width: 412px) {
+    .rightposition :not(:last-child) {
+        display: none;
+    }
+
+    .rightposition :last-child {
+        position: relative;
+        right: 70px;
+    }
+}
+
 /* LeftSide.jsx */
 .ellogo {
     transform: rotate(-10deg);
@@ -37,11 +55,11 @@
     top: 30px;
 }
 
-.bar {
-    margin-left: 300px;
-    width: 400px;
-    border-radius: 30px;
-    border: 1px solid var(--gray);
+@media only screen and (max-width: 412px) {
+    .ellogo {
+        padding-left: 20px;
+        top: 20px;
+    }
 }
 
 .searchbar {
@@ -54,12 +72,37 @@
     border-bottom-left-radius: 30px;
 }
 
+@media only screen and (max-width: 412px) {
+    .searchbar {
+        margin-left: 23px;
+        margin-top: 170px;
+        height: 45px;
+        width: 333px;
+        padding-left: 20px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        box-shadow:
+        0 1.8px 3px rgba(0, 0, 0, 0.0016),
+        0 .2px 5px rgba(0, 0, 0, 0.042)
+    }
+}
+
 .sicon {
     height: 20px;
     position: relative;
     top: 5px;
     left: 20px;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 412px) {
+    .sicon {
+        height: 28px;
+        top: -37px;
+        left: 323px;
+    }
 }
 
 ::placeholder {
