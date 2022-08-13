@@ -35,11 +35,19 @@
 }
 
 @media only screen and (max-width: 412px) {
-    .rightposition :not(:last-child) {
+    .rightposition :nth-child(1) {
         display: none;
     }
 
-    .rightposition :last-child {
+    .rightposition :nth-child(2) {
+        display: none;
+    }
+
+    .rightposition :nth-child(3) {
+        display: none;
+    }
+
+    .rightposition :nth-child(4) {
         position: relative;
         right: 70px;
     }
@@ -65,9 +73,11 @@
 .searchbar {
     height: 35px;
     border: none;
-    width: 325px;
+    width: 300px;
     font-size: 16px;
     outline: none;
+    margin-left: 250px;
+    padding-left: 50px;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
 }
@@ -107,7 +117,6 @@
 
 ::placeholder {
     font-family: 'Lato', sans-serif;
-    padding-left: 15px;
 }
 
 .bar:hover {
@@ -117,4 +126,12 @@
 .bar:focus-within {
     box-shadow: 0 0 5px 0 var(--shadow);
     outline: none;
+}
+
+/* OpenMenu.jsx */
+.menu {
+    margin-top: 500px;
+    height: 200px;
+    width: 50px;
+    background-color: red;
 }
