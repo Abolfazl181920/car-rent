@@ -1,6 +1,7 @@
 // ads directory
 import add1 from '../assets/ads/add1.svg'
 import add2 from '../assets/ads/add2.svg'
+import adsres from '../assets/ads/Adsres.svg'
 
 // cars directory
 import car1 from '../assets/cars/car1svg.svg'
@@ -54,6 +55,7 @@ import social3 from '../assets/socials/3.svg'
 export default {
     add1,
     add2,
+    adsres,
     
     car1,
     car2,

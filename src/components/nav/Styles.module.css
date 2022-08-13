@@ -1,14 +1,36 @@
 .banner {
-    width: 620px;
-    transform: rotate(-10deg);
+    width: 580px;
+    margin-top: 37px;
 }
 
+@media only screen and (max-width: 412px) {
+    .banner {
+        display: none;
+    }
+}
+
+/* LeftBanner.jsx */
 .spaceleft {
-    margin-left: 52px;
+    margin-left: 65px;
     display: inline-block;
 }
 
+/* RightBanner.jsx */
 .spaceright {
-    margin-left: 15px;
+    margin-left: 40px;
     display: inline-block;
+}
+
+.spacerightres {
+    display: none;
+}
+
+@media only screen and (max-width: 412px) {
+    .spacerightres {
+        display: block;
+        transform: rotate(-2.7deg);
+        margin-top: 60px;
+        margin-left: -32px;
+        width: 395px;
+    }
 }

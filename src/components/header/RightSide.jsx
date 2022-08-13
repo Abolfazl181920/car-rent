@@ -20,7 +20,7 @@ export const RightSide = () => {
                 <img className={styles.elrotate} src={images.icon10} alt="bing" />
                 <img className={styles.elrotate} src={images.icon7} alt="heart" />
                 <img className={styles.elrotate} src={images.icon12} alt="setting" />
-                <img onClick={handleOpenMenu} className={styles.elrotate} src={images.logo7} alt="prfile" />
+                <img onClick={handleOpenMenu} className={styles.profi} src={images.logo7} alt="profile" />
             </div>
         </div>
     )
