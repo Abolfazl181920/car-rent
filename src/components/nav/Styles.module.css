@@ -1,0 +1,14 @@
+.banner {
+    width: 620px;
+    transform: rotate(-10deg);
+}
+
+.spaceleft {
+    margin-left: 52px;
+    display: inline-block;
+}
+
+.spaceright {
+    margin-left: 15px;
+    display: inline-block;
+}
